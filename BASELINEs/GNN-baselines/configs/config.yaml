@@ -1,0 +1,31 @@
+DATASET:
+  CNS:
+    CNS_ROOT_DIR : "../../../../DATA/CNSE+CNSS/"
+    FILE_NAME:
+      cnse :  "CNSE/same_event_doc_pair.txt"
+      cnss : "CNSS/same_story_doc_pair.txt"
+    PERIOD_CHAR : '。'
+  WORD:
+    CSV_PATH     : "../../../../DATA/WORD_official_split/WORD.csv"
+    RAW_DATA_DIR : "../../../../DATA/WORD_official_split/WORD_clean/"
+    WIKI_DOC_DIR : "wiki_docs"
+    META_DATA_NAME : "meta_data.json"
+    PERIOD_CHAR : '.'
+  MAX_SEG_LEN : 100
+  MAX_SEG_NUM : 1
+  MAX_PART_NUM : 1
+  # MODE : concatenation
+  SCORE_THRESHOLD : 0.0
+
+MODEL:
+  POOLER_TYPE : 'cls'
+  CNS:
+    bert :    '../../chinese-bert'
+    # bert :    'hfl/chinese-bert-wwm'
+    roberta : 'hfl/chinese-roberta-wwm-ext'
+    xlnet :   'hfl/chinese-xlnet-base'
+  WORD:
+    bert :    './bert-base-uncased'
+    roberta : 'roberta-base'
+    xlnet :   'xlnet-base-cased'
+  HISTORY_NAME : 'history.json'
