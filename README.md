@@ -5,7 +5,7 @@ Concept relatedness estimation (CRE) aims to determine whether two given concept
 <img src="images/overview.png" width="100%">
 
 ## ConcreteGraph
-<img src="images/graph.png" width="100%">
+<img src="images/graph.png" width="50%">
 
 ## Dependencies
 ```
