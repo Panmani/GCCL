@@ -1,5 +1,4 @@
 # Graph Component Contrastive Learning
-## Abstract
 Concept relatedness estimation (CRE) aims to determine whether two given concepts are related. Existing methods only consider the pairwise relationship between concepts, while overlooking the higher-order relationship that could be encoded in a concept-level graph structure. We discover that this underlying graph satisfies a set of intrinsic properties of CRE, including reflexivity, commutativity, and transitivity. In this paper, we formalize the CRE properties and introduce a graph structure named ConcreteGraph. To address the data scarcity issue in CRE, we introduce a novel data augmentation approach to sample new concept pairs from the graph. As it is intractable for data augmentation to fully capture the structural information of the ConcreteGraph due to a large amount of potential concept pairs, we further introduce a novel Graph Component Contrastive Learning framework to implicitly learn the complete structure of the ConcreteGraph. Empirical results on three datasets show significant improvement over the state-of-the-art model. Detailed ablation studies demonstrate that our proposed approach can effectively capture the high-order relationship among concepts.
 
 ## Our model
@@ -9,9 +8,19 @@ Concept relatedness estimation (CRE) aims to determine whether two given concept
 <img src="images/graph.png" width="100%">
 
 ## Dependencies
-requirements.txt
+```
+scikit-learn
+pandas
+networkx
+transformers
+...
+```
+You can install them with:
+```
+pip install -r requirements.txt
+```
 
-## How to run
+## Usage
 ```
 python code/train.py \
     --model=[TRANSFORMER NAME] \
