@@ -1,9 +1,3 @@
 **/.DS_Store
 .ftpconfig
 .vscode/
-.gitignore
-visualize.py
-word/draw_graph.py
-word/clean_data.py
-word/check_empty.py
-BASELINEs/GNN-baselines/configs
