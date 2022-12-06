@@ -30,7 +30,7 @@ With the downloaded CSV file, one can scrape Wikipedia document files by running
 ```
 python code/word/download.py
 ```
-In the configuration file:
+In the configuration file (code/configs/config.yaml):
 * CSV_PATH : path to WORD.csv
 * RAW_DATA_DIR : where the scraped Wikipedia document files are to be stored
 
@@ -40,6 +40,10 @@ The CNSE & CNSS datasets are officially available [HERE](https://github.com/Bang
 * CNSS : same_story_doc_pair.txt
 
 There is no need to scrape documents for CNSE and CNSS, as they are already in those two dataset files.
+
+In the configuration file (code/configs/config.yaml):
+* CNS_ROOT_DIR : directory that stores the dataset files
+* FILE_NAME : path to the .txt files
 
 ## Usage
 To train a model, run:
