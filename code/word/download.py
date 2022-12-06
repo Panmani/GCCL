@@ -57,12 +57,12 @@ def disambiguate_doc_name(doc_name):
 
 if __name__ == '__main__':
 
-    with open("code/configs/config_clean.yaml") as f:
+    with open("code/configs/config.yaml") as f:
         yaml_config = yaml.load(f, Loader=yaml.FullLoader)
 
 
     if not os.path.isdir(yaml_config['DATASET']['WORD']['RAW_DATA_DIR']):
-        os.mkdir(yaml_config['DATASET']['WORD']['RAW_DATA_DIR'])
+        os.makedirs(yaml_config['DATASET']['WORD']['RAW_DATA_DIR'])
 
     wiki_doc_path = os.path.join(yaml_config['DATASET']['WORD']['RAW_DATA_DIR'], yaml_config['DATASET']['WORD']['WIKI_DOC_DIR'])
     if not os.path.isdir(wiki_doc_path):

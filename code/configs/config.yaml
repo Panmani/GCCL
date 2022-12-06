@@ -1,15 +1,15 @@
 DATASET:
   CNS:
-    CNS_ROOT_DIR : "../../DATA/CNSE+CNSS/"
+    CNS_ROOT_DIR : ""
     FILE_NAME:
-      cnse :  "CNSE/same_event_doc_pair.txt"
-      cnss : "CNSS/same_story_doc_pair.txt"
+      cnse :  ""
+      cnss : ""
     PERIOD_CHAR : '。'
   WORD:
-    CSV_PATH     : "../../DATA/WORD_official_split/WORD.csv"
-    RAW_DATA_DIR : "../../DATA/WORD_official_split/WORD_clean/"
-    WIKI_DOC_DIR : "wiki_docs"
-    META_DATA_NAME : "meta_data.json"
+    CSV_PATH     : ""
+    RAW_DATA_DIR : ""
+    WIKI_DOC_DIR : ""
+    META_DATA_NAME : ""
     PERIOD_CHAR : '.'
   MAX_SEG_LEN : 256
   MAX_SEG_NUM : 1
