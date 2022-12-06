@@ -85,3 +85,13 @@ python code/train.py \
 * --aug_ratio : target augmentation ratio (only effective when --use_aug)
 * --k_hops : the maximal number of hops (only effective when --use_aug)
 * --use_gccl : use GCCL for the model
+
+GNN-baselines can be run with
+```
+python train.py \
+    --dataset=[word / cnse / cnss] \
+    --model=[jacobi / shadow / gcnii] \
+    --split_file=[PATH TO DATA SPLIT JSON FILE] \
+    --num_epochs=5 \
+    --dataset_cache_path=[DATASET CACHE]
+```
