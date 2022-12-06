@@ -1,0 +1,6 @@
+tqdm
+pytorch_pretrained_bert
+scikit-learn
+pandas
+bs4
+torchvision
