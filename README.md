@@ -30,7 +30,7 @@ With the downloaded CSV file, one can scrape Wikipedia document files by running
 ```
 python code/word/download.py
 ```
-In the configuration file [PATH TO CONFIG FILE]
+In the configuration file:
 * CSV_PATH : path to WORD.csv
 * RAW_DATA_DIR : where the scraped Wikipedia document files are to be stored
 
@@ -38,6 +38,7 @@ In the configuration file [PATH TO CONFIG FILE]
 The CNSE & CNSS datasets are officially available [HERE](https://github.com/BangLiu/ArticlePairMatching/tree/master/data/raw/event-story-cluster). 
 * CNSE : same_event_doc_pair.txt 
 * CNSS : same_story_doc_pair.txt
+
 There is no need to scrape documents for CNSE and CNSS, as they are already in those two dataset files.
 
 ## Usage
