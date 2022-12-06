@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
 
     if not os.path.isdir(yaml_config['DATASET']['WORD']['RAW_DATA_DIR']):
-        os.makedirs(yaml_config['DATASET']['WORD']['RAW_DATA_DIR'])
+        os.mkdir(yaml_config['DATASET']['WORD']['RAW_DATA_DIR'])
 
     wiki_doc_path = os.path.join(yaml_config['DATASET']['WORD']['RAW_DATA_DIR'], yaml_config['DATASET']['WORD']['WIKI_DOC_DIR'])
     if not os.path.isdir(wiki_doc_path):
